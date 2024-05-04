@@ -19,7 +19,7 @@ This is a template for building an admin system using NiceGUI. It includes featu
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your/repository.git
+    git clone https://github.com/bj-wang-wei/NiceApp.git
     ```
 
 2. Install dependencies:
