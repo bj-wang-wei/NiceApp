@@ -52,6 +52,14 @@ This is a template for building an admin system using NiceGUI. It includes featu
    - Access system logs to view a record of activities and user actions.
    - Logs can help in monitoring system health and tracking user behavior.
 
+## Screen
+   ![Login](screen/login.png)
+   ![Home](screen/home.png)
+   ![Chart](screen/chart.png)
+   ![Role](screen/role.png)
+   ![User](screen/user.png)
+   ![Log](screen/log.png)
+
 ## Internationalization (i18n)
 
 - This system supports internationalization (i18n) for multi-language support.
