@@ -41,7 +41,7 @@ async def show() -> Optional[RedirectResponse]:
                         ),
                     }
                 )
-                ui.open(
+                ui.navigate.to(
                     app.storage.user.get("referrer_path", "/")
                 )  # go back to where the user wanted to go
             else:

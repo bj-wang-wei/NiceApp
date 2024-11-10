@@ -116,7 +116,7 @@ async def index():
 
     def logout():
         app.storage.user.update({"authenticated": False})
-        ui.open("/login")
+        ui.navigate.to("/login")
 
     async def get_current_user():
         user_id = app.storage.user.get("user_id", "")
