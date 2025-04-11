@@ -53,6 +53,7 @@ This is a template for building an admin system using NiceGUI. It includes featu
    - Logs can help in monitoring system health and tracking user behavior.
 
 ## Screen
+
    ![Login](screen/login.png)
    ![Home](screen/home.png)
    ![Chart](screen/chart.png)

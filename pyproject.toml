@@ -2,3 +2,7 @@
 tortoise_orm = "core.settings.TORTOISE_ORM"
 location = "./migrations"
 src_folder = "./."
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

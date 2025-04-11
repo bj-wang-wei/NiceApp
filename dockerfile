@@ -1,15 +1,18 @@
-FROM python:3.11.1
+FROM python:3.11-slim-bookworm
 
-RUN mkdir -p /usr/src/app
-
+# 创建工作目录
 WORKDIR /usr/src/app
 
-COPY requirements.txt /usr/src/app/
+# 复制依赖文件并安装依赖
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install -r /usr/src/app/requirements.txt
+# 复制应用程序代码
+COPY . .
 
-RUN rm -rf /usr/src/app
+# 使用非 root 用户运行
+RUN useradd -m appuser
+USER appuser
 
-COPY . /usr/src/app
-
-CMD [ "python3", "./main.py"]
+# 设置默认启动命令
+CMD ["python3", "./main.py"]
